@@ -1,0 +1,6 @@
+framework module GlobalDataModel {
+  umbrella header "GlobalDataModel-umbrella.h"
+
+  export *
+  module * { export * }
+}

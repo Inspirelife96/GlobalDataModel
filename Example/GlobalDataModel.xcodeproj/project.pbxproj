@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		2AF6E191E1B14848D839D45A /* Pods_GlobalDataModel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlobalDataModel_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36C6E6D2E34254DE06FACF2C /* Pods_GlobalDataModel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlobalDataModel_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3744783C8B78CE309923AB0B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3744783C8B78CE309923AB0B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		4B6D7F033D5C4F52730A1922 /* Pods-GlobalDataModel_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalDataModel_Tests.release.xcconfig"; path = "Target Support Files/Pods-GlobalDataModel_Tests/Pods-GlobalDataModel_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* GlobalDataModel_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlobalDataModel_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,10 +63,10 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		91FC60EC99B2F47D735BC45D /* Pods-GlobalDataModel_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalDataModel_Example.release.xcconfig"; path = "Target Support Files/Pods-GlobalDataModel_Example/Pods-GlobalDataModel_Example.release.xcconfig"; sourceTree = "<group>"; };
-		A09E7C065BF654EA72ADC908 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A09E7C065BF654EA72ADC908 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		CE493919A79BE7657D9B67EB /* Pods-GlobalDataModel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalDataModel_Tests.debug.xcconfig"; path = "Target Support Files/Pods-GlobalDataModel_Tests/Pods-GlobalDataModel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F6331BE69A934A5A12485691 /* Pods-GlobalDataModel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalDataModel_Example.debug.xcconfig"; path = "Target Support Files/Pods-GlobalDataModel_Example/Pods-GlobalDataModel_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		FA9D61C7A903259A7FB1E736 /* GlobalDataModel.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = GlobalDataModel.podspec; path = ../GlobalDataModel.podspec; sourceTree = "<group>"; };
+		FA9D61C7A903259A7FB1E736 /* GlobalDataModel.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GlobalDataModel.podspec; path = ../GlobalDataModel.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				CE493919A79BE7657D9B67EB /* Pods-GlobalDataModel_Tests.debug.xcconfig */,
 				4B6D7F033D5C4F52730A1922 /* Pods-GlobalDataModel_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -324,11 +324,17 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GlobalDataModel_Example/Pods-GlobalDataModel_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/GlobalDataModel/GlobalDataModel.framework",
+				"${BUILT_PRODUCTS_DIR}/INSParse/INSParse.framework",
+				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GlobalDataModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/INSParse.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

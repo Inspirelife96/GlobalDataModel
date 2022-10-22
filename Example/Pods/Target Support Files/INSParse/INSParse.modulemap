@@ -1,0 +1,6 @@
+framework module INSParse {
+  umbrella header "INSParse-umbrella.h"
+
+  export *
+  module * { export * }
+}

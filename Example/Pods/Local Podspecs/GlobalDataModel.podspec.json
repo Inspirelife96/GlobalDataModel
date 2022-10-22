@@ -1,0 +1,34 @@
+{
+  "name": "GlobalDataModel",
+  "version": "0.1.0",
+  "summary": "A short description of GlobalDataModel.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/inspirelife@hotmail.com/GlobalDataModel",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "inspirelife@hotmail.com": "inspirelife@hotmail.com"
+  },
+  "source": {
+    "git": "https://github.com/inspirelife96/GlobalDataModel.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "GlobalDataModel/Classes/**/*",
+  "prefix_header_contents": [
+    "#import <Parse/Parse-umbrella.h>",
+    "#import <INSParse/INSParse-umbrella.h>"
+  ],
+  "dependencies": {
+    "INSParse": [
+
+    ],
+    "Parse": [
+
+    ]
+  }
+}

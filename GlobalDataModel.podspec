@@ -25,7 +25,7 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'inspirelife@hotmail.com' => 'inspirelife@hotmail.com' }
-  s.source           = { :git => 'https://github.com/inspirelife@hotmail.com/GlobalDataModel.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/inspirelife96/GlobalDataModel.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
@@ -39,4 +39,7 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.prefix_header_contents = '#import <Parse/Parse-umbrella.h>', '#import <INSParse/INSParse-umbrella.h>'
+  s.dependency 'INSParse'
+  s.dependency 'Parse'
 end
