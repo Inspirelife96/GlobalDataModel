@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'GlobalDataModel_Example' do
+  pod 'GlobalDataModel', :path => '../'
+
+  target 'GlobalDataModel_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
